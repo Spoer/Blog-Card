@@ -1,0 +1,120 @@
+*{
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(47, 88%, 63%);    
+    height: 100vh;
+}
+
+.card {
+    padding: 20px;
+    width: 375px;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px black ;
+    overflow: hidden;
+    border: solid 1px black;
+}
+
+.pic img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.path {
+    font-weight: 800;
+    background-color: hsl(47, 88%, 63%);
+    width: auto;
+    padding: 7px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 0.82em;
+    margin-bottom: 15px;
+}
+
+.date {
+    color: hsl(0, 0%, 7%);
+    font-weight: 500;
+    font-size: 0.9em;
+    margin-bottom: 1.3em;
+}
+
+.title {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.stuff {
+    color: hsl(0, 0%, 50%);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.ownerProfile {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.owner {
+    font-weight: 800;
+    display: inline;
+}
+
+.title:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 20px 20px black;
+}
+
+@media (max-width: 390px) {
+    .card {
+        width: 90vw;
+        margin: 0.1vw;
+    }
+
+    .path {
+        padding: 5px 12px;
+        font-size: 0.7rem;
+    }
+
+    .date {
+        font-size: 0.7rem;
+    }
+
+    .title{
+        font-size: 1.3rem;
+    }
+    
+    .stuff {
+        font-size: 0.8rem;
+    }
+
+    .profile {
+        width: 25px;
+    }
+
+    .owner {
+        font-size: 0.8rem;
+    }
+}
